@@ -1,0 +1,7 @@
+# Ignore artifacts:
+dist
+cache
+node_modules
+
+# Ignore files:
+*.json

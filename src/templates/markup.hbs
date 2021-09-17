@@ -1,31 +1,35 @@
 {{#each this}}
 
-<li class="menu__item">
+  <li class="menu__item">
     <article class="card">
-        <img class="card__image" src={{image}} alt={{name}} />
-        <div class="card__content">
-            <h2 class="card__name">{{name}}</h2>
-            <p class="card__price">
-                <i class="material-icons"> monetization_on </i>
-                {{price}}
-            </p>
+      <img class="card__image" src={{image}} alt={{name}} />
+      <div class="card__content">
+        <h2 class="card__name">{{name}}</h2>
+        <p class="card__price">
 
-            <p class="card__descr">
-                {{description}}
-            </p>
+          <i class="material-icons"> monetization_on </i>
+          {{price}}
+          кредитов
+        </p>
 
-            <ul class="tag-list">
-                {{#each ingredients}}
-                <li class="tag-list__item">{{this}}</li>
-                {{/each}}
-            </ul>
-        </div>
+        <p class="card__descr">
 
-        <button class="card__button button">
-            <i class="material-icons button__icon"> shopping_cart </i>
-            В корзину
-        </button>
+          {{description}}
+        </p>
+
+        <ul class="tag-list">
+          {{#each ingredients}}
+
+            <li class="tag-list__item">{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <button class="card__button button">
+        <i class="material-icons button__icon"> shopping_cart </i>
+        В корзину
+      </button>
     </article>
-</li>
+  </li>
 
 {{/each}}
